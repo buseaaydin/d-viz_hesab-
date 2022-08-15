@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    
+    <head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+	  </head>
+    
+    <body onload="">
+            <div class="form">
+            <div class="form1">
+        <div title="" class="doviz_cevirici">
+            <ul>
+                <li class="miktar"><b>Miktar</b></li>
+                <li class="giris">
+                    <input name="para" id="para" onkeyup="doviz()" type="text" autocomplete="off"></li>
+                <li class="birim">
+                <select id="birim" onkeyup="doviz()" onchange="doviz()">
+                    <option selected="selected" value="TRY">Türk Lirası</option>
+                    <option value="USD">ABD Doları</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">İngiliz Sterlini</option>
+                    <option value="JPY">Japon Yeni</option>
+                    <option value="CHF">İsviçre Frangı</option>
+                    <option value="DKK">Danimarka Kronu</option>
+                    <option value="SEK">İsveç Kronu</option>
+                    <option value="NOK">Norveç Kronu</option>
+                    <option value="SAR">Suudi Arabistan Riyali</option>
+                    <option value="AUD">Avustralya Doları</option>
+                    <option value="CAD">Kanada Doları</option>
+                    <option value="RUB">Rus Rublesi</option>
+                    <option value="CNY">Çin Yuanı Renminbi</option>
+                    <option value="ZAR">Güney Afrika Randı</option>
+                    <option value="MXN">Meksika Pezosu</option>
+                    <option value="NZD">Yeni Zelanda Doları</option>
+                    <option value="IQD">Irak Dinarı</option>
+                    <option value="AED">Birleşik Arap Emirlikleri Dirhemi</option>
+                    <option value="KWD">Kuveyt Dinarı</option>
+                    <option value="BHD">Bahreyn Dinarı</option>
+                </select>
+                </li>
+                <li class="cevir" id="birimleri_ters_cevir">
+                    <input name="ters_cevir" id="ters_cevir" onclick="tersdoviz()" type="button" value="Birimleri Ters Çevir">
+                </li>
+                <li class="birim2">
+                <select id="birim2" onkeyup="doviz()" onchange="doviz()">
+                    <option value="TRY">Türk Lirası</option>
+                    <option selected="selected" value="USD">ABD Doları</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">İngiliz Sterlini</option>
+                    <option value="JPY">Japon Yeni</option>
+                    <option value="CHF">İsviçre Frangı</option>
+                    <option value="DKK">Danimarka Kronu</option>
+                    <option value="SEK">İsveç Kronu</option>
+                    <option value="NOK">Norveç Kronu</option>
+                    <option value="SAR">Suudi Arabistan Riyali</option>
+                    <option value="AUD">Avustralya Doları</option>
+                    <option value="CAD">Kanada Doları</option>
+                    <option value="RUB">Rus Rublesi</option>
+                    <option value="CNY">Çin Yuanı Renminbi</option>
+                    <option value="ZAR">Güney Afrika Randı</option>
+                    <option value="MXN">Meksika Pezosu</option>
+                    <option value="NZD">Yeni Zelanda Doları</option>
+                    <option value="IQD">Irak Dinarı</option>
+                    <option value="AED">Birleşik Arap Emirlikleri Dirhemi</option>
+                    <option value="KWD">Kuveyt Dinarı</option>
+                    <option value="BHD">Bahreyn Dinarı</option>
+                </select>
+                </li>
+                <li class="sonuc"><b>Sonuç</b></li>
+                    <input name="para2" id="para2" value="sonuç" onfocus="blur()" type="text">
+                
+                    <li>Veriler <a href="https://collectapi.com/tr/api/economy/altin-doviz-ve-borsa-api" target="_blank">collectapi.com</a> sitesinden alınmıştır. Yatırım yapma amacı ile kullanmayınız.</li>    
+
+
+         
+            </ul>
+        </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="kur.js">doviz();</script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+
+    
+
+    
+    </body>
+    
+  </html>
